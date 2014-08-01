@@ -1,0 +1,25 @@
+{
+  "name": "jade2mod",
+  "version": "0.0.0",
+  "description": "convert jade to js run in client side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elrrrrrrr/jade2mod.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "elr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elrrrrrrr/jade2mod/issues"
+  },
+  "homepage": "https://github.com/elrrrrrrr/jade2mod",
+  "dependencies": {
+    "jade": "*"
+  }
+}
