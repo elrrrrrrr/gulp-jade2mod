@@ -15,8 +15,7 @@ function handlerComplie(opt, file){
 
         return jade.compileClient(String(file.contents), opts) + suffix;
     }
-
-    
+       
 }
 
 module.exports = exports = handlerComplie 
