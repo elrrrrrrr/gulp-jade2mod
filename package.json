@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/elrrrrrrr/jade2mod",
   "dependencies": {
-    "jade": "*"
+    "jade": "*",
+    "map-stream": "^0.1.0"
   }
 }

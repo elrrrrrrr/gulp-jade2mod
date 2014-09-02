@@ -1,14 +1,22 @@
 var jade = require('jade')
 var fs = require('fs')
 
-var text = fs.readFileSync('test.jade','utf8')
 
-var a = jade.compileClient(text,{})
 
-eval(a)
+function handlerComplie(opt, file){
 
-fs.writeFile('build.js', a, function (err) {
-  if (err) throw err;
-});
+    var opts = opt || {};
 
-module.exports = exports 
+    return CompileJade(file, opts)
+    
+    function CompileJade(file, opts){
+
+        var suffix = opts.suffix || '\nexports.render = template;';
+
+        return jade.compileClient(String(file.contents), opts) + suffix;
+    }
+
+    
+}
+
+module.exports = exports = handlerComplie 
