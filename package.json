@@ -1,8 +1,8 @@
 {
   "name": "jade2mod",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "convert jade to js moudle run in client side",
-  "main": "index.js",
+  "main": "gulp/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,7 +1,4 @@
 var jade = require('jade')
-var fs = require('fs')
-
-
 
 function handlerComplie(opt, file){
 
@@ -11,9 +8,10 @@ function handlerComplie(opt, file){
     
     function CompileJade(file, opts){
 
-        var suffix = opts.suffix || '\nexports.render = template;';
+        var prefix = opts.prefix || 'var jade = require("jade-env")',
+            suffix = opts.suffix || '\nexports.render = template;';
 
-        return jade.compileClient(String(file.contents), opts) + suffix;
+        return prefix + jade.compileClient(String(file.contents), opts) + suffix;
     }
        
 }
